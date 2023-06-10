@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/style.js"></script>
+    <title>Concurso Quiz</title>
+
+</head>
+<body>
+    <header>
+        <div class="contenedor-titulo">
+            <h2 class="title">JUEGO DE PREGUNTAS</h2>
+            <span class="subtitle">Realizado por Omar Garrocho Diaz</span>
+        </div>
+    </header>
+    <main>
+        <form name="formulario" class="formulario" method="post" onsubmit="event.preventDefault(); verificarForm();">
+            <div class="preguntas" name="preguntas">
+                <span name="pregunta" class="pregunta">1 - ¿Cuál fue la serie más vista en Netflix en el 2019?</span>
+                <div class="respuestas">
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta1"><input type="radio" name="1" value="1" class="respuesta" unchecked><span class="texto">A. Stranger Things</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta1"><input type="radio" name="1" value="0" class="respuesta"><span class="texto">B. Perdidos</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta1"><input type="radio" name="1" value="0" class="respuesta"><span class="texto">C. Los Serrano</span></div>
+                </div>
+            </div>
+            <div class="preguntas" name="preguntas">
+                <span name="pregunta" class="pregunta">2 - ¿Qué equipo de fútbol se le conoce como "The Red Devils"?</span>
+                <div class="respuestas">
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta2"><input type="radio" name="2" value="0" class="respuesta" unchecked><span class="texto">A. F.C. Barcelona</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta2"><input type="radio" name="2" value="0" class="respuesta"><span class="texto">B. Recretivo de Huelva</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta2"><input type="radio" name="2" value="1" class="respuesta"><span class="texto">C. Manchester United</span></div>
+                </div>
+            </div>
+            <div class="preguntas" name="preguntas">
+                <span name="pregunta" class="pregunta">3 - ¿De qué ciudad son originarios los Beatles?</span>
+                <div class="respuestas">
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta3"><input type="radio" name="3" value="0" class="respuesta" unchecked><span class="texto">A. Huelva</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta3"><input type="radio" name="3" value="0" class="respuesta"><span class="texto">B. Estepona</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta3"><input type="radio" name="3" value="1" class="respuesta"><span class="texto">C. Liverpool</span></div>
+                </div>
+            </div>
+            <div class="preguntas" name="preguntas">
+                <span name="pregunta" class="pregunta">4 - ¿Quién inventó la World Wide Web, y cuándo? </span>
+                <div class="respuestas">
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta4"><input type="radio" name="4" value="0" class="respuesta" unchecked><span class="texto">A. Jackie Chan, 1980</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta4"><input type="radio" name="4" value="1" class="respuesta"><span class="texto">B. Tim Berners-Lee, 1990</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta4"><input type="radio" name="4" value="0" class="respuesta"><span class="texto">C. Bill Gates, 2010</span></div>
+                </div>
+            </div>
+            <div class="preguntas" name="preguntas">
+                <span name="pregunta" class="pregunta">5 - ¿Cómo le llaman los locales a la Ciudad de Nueva York? </span>
+                <div class="respuestas">
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta5"><input type="radio" name="5" value="0" class="respuesta" unchecked><span class="texto">A. Sevilla</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta5"><input type="radio" name="5" value="0" class="respuesta"><span class="texto">B. La Pinta</span></div>
+                    <div class="res" onclick="marcarRespuesta(this)" name="respuesta5"><input type="radio" name="5" value="1" class="respuesta"><span class="texto">C. Gotham</span></div>
+                </div>
+            </div>
+            <div class="btn-enviar">
+                <input type="submit" class="btn" name="btn" value="Enviar Respuestas"></input></div>
+            <div class="contenedor-aciertos">
+                <span id="resultado"></span>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
